@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  rstudio:
+    build: .
+    ports:
+      - "8787:8787"
+    environment:
+      - ROOT=TRUE
+      - PASSWORD=pass
+    volumes:
+      - ./home:/home
