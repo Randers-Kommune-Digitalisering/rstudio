@@ -1,4 +1,4 @@
-from rocker/rstudio:latest
+from rocker/rstudio:4.3.2
 
 # Install dependencies
 RUN apt-get update && apt-get -y install inotify-tools
